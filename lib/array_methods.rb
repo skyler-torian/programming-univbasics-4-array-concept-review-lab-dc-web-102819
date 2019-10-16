@@ -10,17 +10,29 @@ def find_element_index(array, value_to_find)
 end
 
 def find_max_value(array)
-  counter = 0 
+  counter = 0
+  maxval = array[counter]
   while array[counter] do
-    if array[counter]
-      return counter
+    if array[counter] > maxval
+      maxval = array[counter]
+      counter += 1
     else
       counter += 1
     end
   end
-  # Add your solution here
+  return maxval
 end
 
 def find_min_value(array)
-  # Add your solution here
+  counter = 0
+  maxval = array[counter]
+  while array[counter] do
+    if array[counter] < minval
+      minval = array[counter]
+      counter += 1
+    else
+      counter += 1
+    end
+  end
+  return minval
 end
